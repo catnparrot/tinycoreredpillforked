@@ -30,7 +30,8 @@ jobs:
           mkdir /opt/tinycore-redpill
           cd /opt/tinycore-redpill
           ls -al /home/runner/work/
-          cp -rfp /home/runner/work/tinycore-redpill/tinycore-redpill/* .
+          ls -al /home/runner/work/
+          #cp -rfp /home/runner/work/tinycoreredpillforked/tinycore-redpill/* .
           cp -rfp /opt/config-files/redpill-load/config /opt/tinycore-redpill
           sudo find . -type f -name "*.sh" -exec chmod +x {} \;
           sudo chmod +x /opt/tinycore-redpill/tools/*
